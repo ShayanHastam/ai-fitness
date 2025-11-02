@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>داشبورد من</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      margin: 0;
+      background: #111827;
+      color: #f3f4f6;
+      direction: rtl;
+    }
+
+    header {
+      background: linear-gradient(90deg, #3B82F6, #2563EB);
+      padding: 1.2rem 2rem;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.3rem;
+      border-bottom: 3px solid #22C55E;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .welcome {
+      background: #1F2937;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(59,130,246,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .welcome h2 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .progress-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+      gap: 1rem;
+    }
+
+    .progress-card {
+      background: #374151;
+      flex: 1;
+      min-width: 160px;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      text-align: center;
+    }
+
+    .progress-bar {
+      background: #1F2937;
+      border-radius: 1rem;
+      height: 10px;
+      overflow: hidden;
+      margin-top: 0.5rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #22C55E, #16A34A);
+      width: 70%;
+    }
+
+    .today {
+      background: #1F2937;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      margin-top: 2rem;
+    }
+
+    .today h3 {
+      color: #F97316;
+    }
+
+    .quote {
+      margin-top: 2rem;
+      background: linear-gradient(135deg, #3B82F6, #22C55E);
+      padding: 1rem;
+      border-radius: 1rem;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: #1F2937;
+      flex: 1;
+      min-width: 150px;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 0.8rem;
+    }
+
+    .cta {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+
+    .cta button {
+      background: linear-gradient(90deg, #22C55E, #16A34A);
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta button:hover {
+      background: linear-gradient(90deg, #16A34A, #22C55E);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>🏋️‍♂️ داشبورد تمرینی من</header>
+
+  <div class="container">
+    <section class="welcome">
+      <h2>👋 خوش اومدی، علی!</h2>
+      <p>خلاصه وضعیت تمرینی شما:</p>
+
+      <div class="progress-section">
+        <div class="progress-card">
+          <strong>پیشرفت هفتگی</strong>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <small>70٪ تکمیل</small>
+        </div>
+        <div class="progress-card">
+          <strong>تمرینات انجام شده</strong>
+          <p>5 از 7 جلسه</p>
+        </div>
+        <div class="progress-card">
+          <strong>وزن فعلی</strong>
+          <p>74.8 کیلوگرم</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="today">
+      <h3>برنامه امروز</h3>
+      <p>📅 تمرکز: سینه و سه‌سر</p>
+      <p>⏱ مدت تمرین: ۴۵ دقیقه</p>
+      <p>🔥 کالری تقریبی: ۳۵۰</p>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        🧠 <br> ذهنیت امروز: ۸/۱۰
+      </div>
+      <div class="stat-card">
+        💧 <br> آب مصرفی: ۲.۳ لیتر
+      </div>
+      <div class="stat-card">
+        😴 <br> خواب: ۷ ساعت
+      </div>
+    </section>
+
+    <div class="quote">
+      💬 “تنها رقیب واقعی تو، نسخه‌ی دیروزه‌ی خودته.”
+    </div>
+
+    <div class="cta">
+      <button>شروع تمرین امروز 🚀</button>
+    </div>
+  </div>
+</body>
+</html>

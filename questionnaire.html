@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پرسشنامه - Fitness AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🏋️‍♂️ Fitness<span>AI</span></div>
+  </header>
+
+  <section class="form-container">
+    <h2>پرسشنامه اولیه</h2>
+    <form id="questionnaire">
+      <label>🎯 هدفت چیه؟</label>
+      <select>
+        <option>افزایش عضله</option>
+        <option>کاهش وزن</option>
+        <option>تناسب عمومی</option>
+      </select>
+
+      <label>💪 سطح فعلی تمرینت؟</label>
+      <select>
+        <option>مبتدی</option>
+        <option>متوسط</option>
+        <option>پیشرفته</option>
+      </select>
+
+      <label>📏 قد (سانتی‌متر)</label>
+      <input type="number" placeholder="مثلاً ۱۸۰">
+
+      <label>⚖️ وزن (کیلوگرم)</label>
+      <input type="number" placeholder="مثلاً ۷۵">
+
+      <button type="button" class="cta-btn" onclick="startPlan()">نمایش برنامه</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
